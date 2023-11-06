@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Simulador de Tarefas (To-Do List)</h1>
+    <div id="tarefas">
+        <div class="tarefa-card">
+            <h2>Tarefa 1</h2>
+            <p>Descrição: Esta é a primeira tarefa.</p>
+            <p>Status: <span class="status">Pendente</span></p>
+            <button onclick="concluirTarefa(this)">Concluir</button>
+            <button onclick="excluirTarefa(this)">Excluir</button>
+        </div>
+    </div>
+    <div class="adicionar-tarefa">
+        <h2>Adicionar Nova Tarefa</h2>
+        <input type="text" id="titulo" placeholder="Título da tarefa">
+        <input type="text" id="descricao" placeholder="Descrição da tarefa">
+        <button onclick="adicionarTarefa()">Adicionar</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
